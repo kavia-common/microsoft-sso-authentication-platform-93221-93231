@@ -1,0 +1,162 @@
+:root {
+  --primary: #0078d4;
+  --secondary: #2b2b2b;
+  --accent: #f2c811;
+  --background: #181818;
+  --card-bg: #222229;
+  --text: #f7fafc;
+  --text-secondary: #bbbbbb;
+  --danger: #e02f2f;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: var(--background);
+}
+
+.login-card {
+  background: var(--card-bg);
+  padding: 2.5rem 2.5rem 2rem 2.5rem;
+  border-radius: 18px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.18), 0 0.5px 2px rgba(0,0,0,0.10);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 310px;
+}
+
+.ms-logo {
+  width: 56px;
+  height: 56px;
+  margin-bottom: 0.3rem;
+  margin-top: 0.3rem;
+}
+
+.login-title {
+  color: var(--primary);
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0.9rem 0 0.1rem 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.login-desc {
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+
+.ms-login-btn {
+  background: var(--primary);
+  color: var(--text);
+  border: none;
+  border-radius: 32px;
+  padding: 0.85rem 2.2rem 0.85rem 2.7rem;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  font-size: 1.07rem;
+  font-weight: 500;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  margin-bottom: 1.2rem;
+  transition: background .14s, color .12s, box-shadow .12s;
+}
+
+.ms-login-btn:hover, .ms-logout-btn:hover {
+  background: var(--accent);
+  color: #111;
+  box-shadow: 0 6px 24px rgba(242,200,17,0.15);
+}
+
+.ms-login-btn-icon {
+  position: absolute;
+  left: 1.1rem;
+  display: flex;
+}
+
+.ms-login-btn-icon svg {
+  vertical-align: middle;
+}
+
+.ms-logout-btn {
+  background: none;
+  border: 1.5px solid var(--accent);
+  color: var(--accent);
+  border-radius: 32px;
+  padding: 0.65rem 1.2rem;
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  cursor: pointer;
+  transition: background .14s, color .12s, box-shadow .12s;
+}
+
+.login-success {
+  text-align: center;
+  padding: 0.5rem 0;
+}
+
+.login-welcome {
+  color: var(--text);
+  font-size: 1.16rem;
+  margin-bottom: 0.4rem;
+}
+.login-check {
+  color: var(--accent);
+  font-size: 1.3em;
+  vertical-align: bottom;
+  margin-right: 0.35em;
+}
+
+.login-user {
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.login-loading {
+  color: var(--accent);
+  padding-top: 1rem;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.login-error {
+  color: var(--danger);
+  background: rgba(224,50,47, 0.05);
+  border: 1px solid rgba(224,50,47,0.22);
+  border-radius: 9px;
+  padding: 0.7rem 1rem;
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  text-align: center;
+  word-break: break-word;
+}
+
+.login-footer {
+  color: var(--text-secondary);
+  text-align: center;
+  font-size: 0.88rem;
+  margin-top: 2.2rem;
+  letter-spacing: 0.01em;
+}
+
+@media (max-width: 520px) {
+  .login-card {
+    min-width: unset;
+    width: 96vw;
+    padding: 1.1rem 0.4rem 1rem 0.4rem;
+  }
+  .ms-logo {
+    width: 43px;
+    height: 43px;
+  }
+  .login-title {
+    font-size: 1.22rem;
+  }
+}
